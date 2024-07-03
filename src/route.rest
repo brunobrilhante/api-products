@@ -1,0 +1,23 @@
+###
+GET http://localhost:3000/products
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Galaxy Book4",
+    "description": "The best notebook in the world",
+    "value": 4000,
+    "discount": 0.15
+}
+###
+GET http://localhost:3000/products/667f1a380e243cd3928559b9
+###
+PATCH http://localhost:3000/products/667f1a380e243cd3928559b9
+Content-Type: application/json
+
+{    
+    "discount": 0.15
+}
+###
+DELETE http://localhost:3000/products/668557788b56c353691fc12c
